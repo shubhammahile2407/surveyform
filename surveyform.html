@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="surveyform.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">N.I.T. kurukshetra Survey Form</h1>
+      <p id="description">Thanks for taking time and filling this form</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name"> Name<input id="name" type="text" required
+            placeholder="Enter Your Name" /></label>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email"> Email<input placeholder="Enter a valid Email address" id="email"
+            type="email" required /></label>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"> Age (optional)<input placeholder="Age" id="number" type="number"
+            max="30" min="15" />
+      </div>
+      <div class="form-group">
+        <label for="dropdown"> Which year are you in?<select id="dropdown">
+            <option>choose one from below</option>
+            <option>B.Tech 1st year</option>
+            <option>B.Tech 2nd year</option>
+            <option>B.Tech 3rd year</option>
+            <option>B.Tech Final year</option>
+            <option>Pursuing masters</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="course-label" for="course"> what other course are you pursuing <input type="text" id="course"
+            placeholder="some other course" /></label>
+      </div>
+      <div class="form-group">
+        <p> What type of scholar are you?</p>
+        <label><input type="radio" name="type" id="hosteler" checked value="hosteler" /> Hosteler</label><br />
+        <label><input type="radio" name="type" id="dayscholar" value="dayscholar" /> Day scholar</label><br />
+      </div>
+      <div class="form-group">
+        <p>What Extra-Curricular activities are you involved in?</p>
+        <label for="clubs"><input type="checkbox" id="clubs" value="clubs"> Clubs</label><br />
+        <label for="tech"><input type="checkbox" id="tech" value="tech"> Thecnical socities</label><br />
+        <label for="cult"><input type="checkbox" id="cult" value="cult"> Cultural socities</label><br />
+        <label for="sports"><input type="checkbox" id="sports" value="sports"> Sports</label><br />
+        <label for="ncc"><input type="checkbox" id="ncc" value="ncc"> N.C.C.</label><br />
+        <label for="nss"><input type="checkbox" id="nss" value="nss" > N.S.S.</label><br />
+        <label for="other"><input type="checkbox" id="other" value="other"> Other</label><br />
+      </div>
+      <div class="form-group">
+        <label for="rate"> How much do your rate our college (out of 5)<select id="rate">
+            <option checked>choose one from below</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </label>
+      </div>
+      <div id="rating" class="form-group">
+        <p>Rate the following exclusively from 1 to 5 </p>
+        <ul>
+            <li><label for="faculty"> Teachers<input id="faculty" value="faculty" type="number" min="1" max="5"/></label></li>
+            <li><label for="food">Mess food<input id="food" value="food" type="number" min="1" max="5"/></label></li>
+            <li><label for="infra">Infrastructure<input id="infra" value="infra" type="number" min="1" max="5"/></label></li>
+            <li><label for="environment">Study environment<input  id="environment" value="environment" type="number" min="1" max="5"/></label></li>
+        </ul>
+    </div>
+      <div class="form-group">
+        <label for="issues"> Provide us with any complaints or suggest improvements from your side<textarea id="issues" placeholder="Feel free to write here..."
+            value="issues" rows=3 cols=30></textarea>
+      </div>
+      <div class="form-group">
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+</body>
+<html>
